@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto',sans-serif;    
+}
+
+a{
+    text-decoration: none;
+}
+
+.cabecalho{
+    background-color: #212121;
+    width: 100%;
+    height: 110px;   
+    position: relative; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu2{
+    visibility: hidden;
+    position: relative;
+    color: #f5f5f5;
+    background-color: #212121;
+    border: none;
+    outline: none;
+}
+
+.titulos{
+    position: relative;
+    left: -10px;
+    flex-grow: 1;
+}
+
+.pesquisa{
+    position: relative;
+    outline-color: #E65100;
+    flex-grow: 1;
+}
+
+.pesquisa button{
+    position: relative;
+    background-color: #E65100;
+    border: none;
+    height: 30px;
+    width: 30px;
+    top: 6px;
+    left: -34px;
+    z-index: 2;
+    outline: none;
+}
+
+.pesquisa button:hover{
+    background-color: #FB8C00; 
+    cursor: pointer;    
+}
+
+.pesquisa button:active{
+    background-color: #F57C00;
+    width: 29px;
+    height: 29px; 
+}
+
+.search{
+    background-color: #424242;
+    color: #f5f5f5; 
+    height: 30px;
+    border: none;
+    outline: none;
+    width: 330px;
+}
+
+.maintitle{
+    font-family: "Audiowide" , cursive;
+    font-size: 30px;
+    color: #f5f5f5;  
+}
+
+.subtitle{
+    color: #E65100;
+    font-size: 15px;
+}
+
+.cabecalho a button:hover{
+    cursor: pointer;
+}
+
+.menu{    
+    width: 100%;
+    background-color: #212121;
+    font-family: 'Roboto',sans-serif; 
+    z-index: 9999;  
+    display: inline-block;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 
+                0 1px 7px 0 rgba(0, 0, 0, 0.12), 
+                0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;  
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;   
+    text-decoration: none;
+    text-align: center;
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;    
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+    z-index: 999;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    background-color: #f5f5f5;
+    color: #212121;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu a[href="index.html"]{
+    background-color: #E65100;
+}
+
+.scroll {
+    position: fixed;
+    top:0;
+}
+
+.container{
+    width: 100%;
+}
+
+.titulo_destaques{
+    color: #F57C00;
+    font-size: 30px;
+    position: relative;
+    padding: 20px;
+    font-family: "Audiowide" , cursive;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.destaque{
+    position: relative;
+    width: 80%;
+    margin: 0 auto; 
+    /* overflow: hidden; */
+    /* margin-bottom: 7%; */
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    position: relative; 
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider span:hover i{
+    color: #F57C00;
+    cursor: pointer;
+}
+
+.filter{
+    background-color: #E0E0E0;
+    display: flex;
+    width: 35%;
+    height: 450px;
+    flex-direction: column;
+    position: fixed; 
+    margin: 20px;
+    border-radius: 5px;
+    transform: translateX(-99%);
+    transition: all .6s ease-in-out;
+    z-index: 20;
+}
+
+.filter h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.filter h2{
+    margin: 10px auto;  
+    font-size: 20px;
+}
+
+.filter select{
+    margin: 20px auto;
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.filter select option{
+    border: none;
+    outline: none;
+}
+
+.filter a{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    top: 20px;
+}
+
+.filter a button{
+
+    height: 40px;
+    background-color: #E65100;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    
+}
+
+.filter a button:hover{
+    background-color: #FB8C00; 
+    cursor: pointer;    
+}
+
+.filter button:active{
+    background-color: #F57C00;
+    outline: none;
+    height: 39px;
+}
+
+.filtro {
+    transform: translateX(0%);
+}
+
+.filter .span{
+    position: absolute;
+    top: 45%;
+    left:  3px;
+    cursor: pointer;
+}
+
+.filter .span2{
+    position: absolute;
+    right: 3px;
+    top: 45%;
+    cursor: pointer;
+}
+
+.artigo{
+
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.artigo .titulo_noticias{
+    color: #F57C00;
+    font-size: 30px;
+    position: relative;
+    font-family: "Audiowide" , cursive;
+    letter-spacing: 2px; 
+}
+
+.artigo h3{
+    position: relative;
+    color: #212121;
+    padding: 10px 0;
+}
+
+.artigo p{
+    text-align: justify;
+}
+
+.artigo a{
+    color: #F57C00;
+}
+
+footer{
+    background-color: #212121; 
+    height: 50px;
+    width: 100%;
+}
+
+footer p{
+    color: #f5f5f5;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 14px;
+    text-align: center;  
+}
+
+.destaque2{
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.destaque2 .titulo_destaque2{
+    color: #F57C00;
+    font-size: 30px;
+    position: relative;
+    font-family: "Audiowide" , cursive;
+    letter-spacing: 2px; 
+}
+
+.vejatambem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.vejatambem img{
+    width: 95%; 
+    height: auto;  
+}
+
+.noticia{
+    width: 80%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.noticia .titulo_noticia{
+    color: #F57C00;
+    font-size: 30px;
+    position: relative;
+    font-family: "Audiowide" , cursive;
+    letter-spacing: 2px; 
+    padding: 20px 0;
+}
+
+.noticia p{
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.noticia video{
+    width: 50%;
+    position: relative;
+    margin: 10px auto;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 
+                0 1px 7px 0 rgba(0, 0, 0, 0.12), 
+                0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    border: none;
+    left: 25%;
+}
+
+.titulo_jogos{
+    color: #F57C00;
+    font-size: 30px;
+    position: relative;
+    font-family: "Audiowide" , cursive;
+    letter-spacing: 2px; 
+    margin: 20px auto;
+    width: 80%;
+    left: 20px;
+}
+
+.jogos{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.jogos a{
+    position: relative;
+    padding: 20px;
+}
+
+.jogos a:hover{
+    border: solid 2px #424242;
+}
+
+.jogos figcaption{
+    text-align: center;
+    color: #212121;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.jogos a:hover figcaption{
+    color: #F57C00;
+}
+
+.jogodesc{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.jogodesc h2{
+    color: #212121;
+    position: absolute;
+    margin: 20px auto;
+}
+
+.jogodesc .imagem{
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+}
+
+.jogodesc .info{
+    position: relative;
+    top: 200px;
+    left: 225px;
+}
+
+.jogodesc .info p{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.jogodesc .info :nth-child(1){
+    color: #F57C00;
+}
+
+.jogodesc h3{
+    position: relative;
+    margin-top: 250px;
+    font-weight: bold;
+}
+
+.jogodesc p{
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.sliderjogo{
+    width: 600px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #ddd;
+
+}
+
+.principal{
+    width: 600px;
+    height: 300px;  
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+    width:400%;
+    transition: all .8s;
+}
+
+label img{
+    width: 25%;
+    cursor: pointer;
+    float: left;
+    opacity: 0.3;
+    transition: all .4s;
+}
+
+#foto2:checked ~ .principal .slide{
+    margin-left: -100%;
+}
+
+#foto3:checked ~ .principal .slide{
+    margin-left: -200%;
+}
+
+#foto4:checked ~ .principal .slide{
+    margin-left: -300%;
+}
+
+input[name="grupo"]{
+    display: none;
+}
+
+input[name="grupo"]:checked + label img{
+    opacity: 0.9;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+
+    .cabecalho{
+        width: 100%;
+        justify-content: normal;
+    }
+
+    .menu2{
+        visibility: visible;
+        position: relative;
+        left: 20px;
+    }
+
+    .titulos{   
+        left: 40px;
+        min-width: 280px;
+    }
+
+    .pesquisa{      
+        transform: translateX(-200%);
+    }
+
+    .filter{
+        width: 100%;
+    }
+
+    .menu{
+        position: absolute;
+        transform: translateX(-110%);
+        transition: all .3s ease-in-out;        
+        
+    }
+
+    .menuresponsivo{
+        transform: translateX(0)!important;  
+        transition: all .3s ease-in-out; 
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul{
+        position: relative;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .drop{
+        max-height: 200px!important;
+        overflow: visible!important;
+        transition: all .3s ease-in-out!important;
+    }
+
+    .filtro {
+        transform: translateX(0%);
+    }
+
+    .titulo_destaques{
+        font-size: 25px;
+    }
+
+    .artigo .titulo_noticias{
+        font-size: 25px;
+    }
+
+    .titulo_destaque2{
+        font-size: 25px;
+    }
+
+    .noticia .titulo_noticia{
+        font-size: 20px;
+    }
+
+    .noticia video{
+        left: 0;
+        width: 100%;
+
+    }
+
+    .sliderjogo{
+        width: 300px;
+    }
+
+    .principal{
+        width: 300px;
+        height: 150px;  
+    }
+    
+    .slide img{
+        width: 300px;
+        height: 150px;
+    }
+
+    #foto4:checked ~ .principal .slide{
+        margin-left: -300%;
+    }
+
+    .jogodesc .info{
+        left: 0;
+        top: 350px;
+    }
+
+    .jogodesc h3{
+        margin-top: 390px;
+    }
+
+} 

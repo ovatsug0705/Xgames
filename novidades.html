@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>X Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script src="javascript/funcao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="shortcut icon" href="midias/favicon.ico">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <button class="menu2" onclick="abrirmenu()">
+            <i class="material-icons">menu</i>
+        </button>
+        <div class="titulos">
+            <a href="index.html" class="link">
+                <h1 class="maintitle">X Games</h1>
+            </a>
+            <h2 class="subtitle">Os melhores jogos pelos melhores preços</h2>
+        </div>
+        <div class="pesquisa">
+            <input type="text" class="search" placeholder="Digite aqui o que procura">
+            <a href="pesquisa.html">
+                <button title="Pesquisar" onclick="pesquisar()">
+                    <i class="material-icons">search</i>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li onclick="menudrop()">
+                <a>Jogos</a>
+                <ul class="navjogos" onmouseleave="menudrop()">
+                    <li>
+                        <a href="jogos_acao.html">Ação</a>
+                    </li>
+                    <li>
+                        <a href="jogos_aventura.html">Aventura</a>
+                    </li>
+                    <li>
+                        <a href="jogos_esporte.html">Esporte</a>
+                    </li>
+                    <li>
+                        <a href="jogos_todos.html">Todos</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="novidades.html">Novidades</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" onclick="removemenu()">
+
+        <section class="filter">
+
+            <span onclick="movfiltro(1)" class="span">
+                <i class="material-icons">keyboard_arrow_left</i>
+            </span>
+            <h2>Quais jogos você procura?</h2>
+            <span onclick="movfiltro(2)" class="span2">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </span>
+
+            <select name="ano" class="filterano">
+                <option value="ano">Ano</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+            </select>
+
+            <select name="genero" class="filtergenero">
+                <option value="genero">Gênero</option>
+                <option value="acao">Acao</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Esporte">Esporte</option>
+            </select>
+
+            <select name="plataforma" class="filterplataforma">
+                <option value="plataforma">Plataforma</option>
+                <option value="xbox">Xbox</option>
+                <option value="Playstation">PS4</option>
+                <option value="Nintendo">Nintendo</option>
+            </select>
+
+
+            <a href="pesquisa.html">
+                <button title="Buscar" onclick="buscar()">Buscar</button>
+            </a>
+        </section>
+
+        <article class="noticia">
+            <h2 class="titulo_noticia">STREET FIGHTER V: ARCADE EDITION GANHA TRAILER DE LANÇAMENTO</h2>
+            <p>
+                O ano 2018 marca o aniversário de 30 anos da franquia e muitas novidades para o quinto game. Além de diversos novos personagens
+                de DLC, os jogadores terão o modo Arcade, diversos finais e ilustrações para cada herói e uma revisada completa
+                no sistema de combate, com direito a novos V-Triggers, balanceamentos que mudam bastante coisa e muito mais.
+                Confira o trailer de lançamento e um vídeo de introdução às mecânicas de Sakura:
+            </p>
+            <video controls class="video_noticia">
+                <source src="midias/street.mp4" type="video/mp4"> Que pena não foi possível exibir este vídeo, tente mais tarde.
+            </video>
+            <p>
+                Street Fighter V: Arcade Edition já está disponível para PC e PlayStation 4. Os jogadores que já têm o game receberão todas
+                as alterações de maneira gratuita, mas ficarão sem os DLCs de personagens.
+            </p>
+        </article>
+
+        <article class="noticia">
+            <h2 class="titulo_noticia">HARRY POTTER: MISTÉRIOS DE HOGWARTS, RPG DE MOBILE, GANHA PRIMEIRO TRAILER</h2>
+            <p>
+                A Jam City, um estúdio de jogos mobile, revelou novos detalhes de Harry Potter: Mistérios de Hogwarts, que inclui o primeiro
+                trailer do jogo. O RPG havia sido anunciado há um tempo e só agora recebeu informações mais palpáveis e concretas.
+                Vale lembrar que não se trata do game para celulares da franquia que a Niantic, criadora de Pokémon GO, está
+                fazendo.
+            </p>
+            <p>
+                Harry Potter: Mistérios de Hogwarts (Harry Potter: Hogwarts Mystery) é o primeiro jogo em que os jogadores podem criar seu
+                próprio personagem e viver como um aluno de Hogwarts. Nesse título de interpretação de papéis, os jogadores
+                criarão um avatar personalizado de aluno, assistirão às aulas, aprenderão a fazer magia, criarão amizades
+                ou rivalidades com outros alunos e tomarão decisões cruciais que afetarão a história do seu personagem à
+                medida que passam de ano em Hogwarts, se desenvolvendo como bruxa ou mago. Confira o trailer:
+            </p>
+            <video controls class="video_noticia">
+                <source src="midias/harrypotter.mp4" type="video/mp4"> Que pena não foi possível exibir este vídeo, tente mais tarde.
+            </video>
+            <p>
+                O jogo se passa no período entre o nascimento de Harry Potter e sua entrada em Hogwarts, quando Ninfadora Tonks e Gui Weasley
+                eram alunos. O sistema de personalização de avatar permite que você aprimore seu avatar constantemente à
+                medida que obtém mais experiência e habilidades mágicas – você pode até escolher seu próprio animal.
+            </p>
+            <p>
+                Você fará parte de uma das quatro casas antes de avançar ano a ano em Hogwarts, participando de aulas de magia e atividades
+                como poções e transfiguração. Desenvolver suas habilidades será útil para resolver mistérios e participar
+                de aventuras. À medida que desenvolverem suas habilidades, os jogadores destravarão novos lugares, feitiços
+                e habilidades mágicas.
+            </p>
+            <p>
+                Antes do lançamento, que ocorrerá na primavera americana (nosso outono), o título será apresentado aos fãs em um evento chamado
+                "A Celebration of Harry Potter", no Universal Studios de Orlando, Flórida, entre os dias 26 e 28 de janeiro.
+                O game será lançado pela Portkey Games, da Warner Bros. Interactive Entertainment, uma marca dedicada a criar
+                experiências de títulos inspirados na fantasia e nas aventuras do mundo mágico de J.K. Rowling. Harry Potter:
+                Mistérios de Hogwarts chega no outono brasileiro deste ano para iOS e Android.
+            </p>
+        </article>
+
+    </div>
+    <footer>
+        <p> &copy; Copyright 2018 - X Games </p>
+    </footer>
+</body>
+
+</html>

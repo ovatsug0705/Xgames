@@ -1,0 +1,155 @@
+[
+    {
+        "nome": "shadow of the colossus",
+        "ano": "2018",
+        "genero":"aventura",
+        "plataforma": "ps4",
+        "imagem":"midias/sha.jpg",
+        "link": "colossus.html"
+    },
+
+    {
+        "nome": "assassin's creed origins",
+        "ano": "2017",
+        "genero":"acao",
+        "plataforma": "ps4",
+        "imagem":"midias/ass.jpg",
+        "link": "assassins.html"
+    },
+
+    {
+        "nome": "call of duty world war 2",
+        "ano": "2017",
+        "genero":"acao",
+        "plataforma": "ps4",
+        "imagem":"midias/call.jpg",
+        "link": "callofduty.html"        
+    },
+
+    {
+        "nome": "diablo 3",
+        "ano": "2012",
+        "genero":"aventura",
+        "plataforma": "ps4",
+        "imagem":"midias/diablo.jpg",
+        "link": "diablo.html"   
+    },
+
+    {
+        "nome": "far cry 4",
+        "ano": "2014",
+        "genero":"acao",
+        "plataforma": "ps4",
+        "imagem":"midias/far.jpg",
+        "link": "farcry.html"
+        
+    },
+
+    {
+        "nome": "fórmula 1 2017",
+        "ano": "2017",
+        "genero":"esporte",
+        "plataforma": "xbox",
+        "imagem":"midias/f1.jpg",
+        "link": "formula1.html"
+    },
+
+    {
+        "nome": "forza motorsport 7",
+        "ano": "2017",
+        "genero":"esporte",
+        "plataforma": "xbox",
+        "imagem":"midias/forza.jpg",
+        "link": "forza.html"
+    },
+
+    {
+        "nome": "god of war",
+        "ano": "2018",
+        "genero":"aventura",
+        "plataforma": "ps4",
+        "imagem":"midias/godofwar.jpg",
+        "link": "godofwar.html"
+    },
+
+    {
+        "nome": "gran theft auto 5",
+        "ano": "2013",
+        "genero":"acao",
+        "plataforma": "xbox",
+        "imagem":"midias/gta.jpg",
+        "link": "gta5.html"
+    },
+
+    {
+        "nome": "overwatch",
+        "ano": "2016",
+        "genero":"acao",
+        "plataforma": "ps4",
+        "imagem":"midias/over.jpg",
+        "link": "overwatch.html"
+    },
+
+    {
+        "nome": "pro evolution soccer 2018",
+        "ano": "2018",
+        "genero":"esporte",
+        "plataforma": "ps4",
+        "imagem":"midias/pes.jpg",
+        "link": "pes.html"
+    },
+
+    {
+        "nome": "rainbow six siege",
+        "ano": "2015",
+        "genero":"acao",
+        "plataforma": "ps4",
+        "imagem":"midias/rb.png",
+        "link": "rainbowsix.html"
+    },
+
+    {
+        "nome": "rocket league",
+        "ano": "2015",
+        "genero":"esporte",
+        "plataforma": "ps4",
+        "imagem":"midias/roc.jpg",
+        "link": "rocket.html"
+    },
+
+    {
+        "nome": "ufc 2",
+        "ano": "2016",
+        "genero":"esporte",
+        "plataforma": "ps4",
+        "imagem":"midias/ufc.jpg",
+        "link": "ufc.html"
+    },
+
+    {
+        "nome": "uncharted 4",
+        "ano": "2016",
+        "genero":"aventura",
+        "plataforma": "ps4",
+        "imagem":"midias/unch.png",
+        "link": "uncharted.html"
+    },
+
+    {
+        "nome": "the witcher 3",
+        "ano": "2015",
+        "genero":"aventura",
+        "plataforma": "ps4",
+        "imagem":"midias/wit.png",
+        "link": "witcher.html"
+    },
+
+    {
+        "nome": "the legend of zelda",
+        "ano": "2017",
+        "genero":"aventura",
+        "plataforma": "nintendo",
+        "imagem":"midias/zelda.jpg",
+        "link": "zelda.html"
+    }
+]

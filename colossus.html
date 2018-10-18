@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>X Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script src="javascript/funcao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="shortcut icon" href="midias/favicon.ico">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <button class="menu2" onclick="abrirmenu()">
+            <i class="material-icons">menu</i>
+        </button>
+        <div class="titulos">
+            <a href="index.html" class="link">
+                <h1 class="maintitle">X Games</h1>
+            </a>
+            <h2 class="subtitle">Os melhores jogos pelos melhores preços</h2>
+        </div>
+        <div class="pesquisa">
+            <input type="text" class="search" placeholder="Digite aqui o que procura">
+            <a href="pesquisa.html">
+                <button title="Pesquisar" onclick="pesquisar()">
+                    <i class="material-icons">search</i>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li onclick="menudrop()">
+                <a>Jogos</a>
+                <ul class="navjogos" onmouseleave="menudrop()">
+                    <li>
+                        <a href="jogos_acao.html">Ação</a>
+                    </li>
+                    <li>
+                        <a href="jogos_aventura.html">Aventura</a>
+                    </li>
+                    <li>
+                        <a href="jogos_esporte.html">Esporte</a>
+                    </li>
+                    <li>
+                        <a href="jogos_todos.html">Todos</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="novidades.html">Novidades</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" onclick="removemenu()">
+
+        <section class="filter">
+
+            <span onclick="movfiltro(1)" class="span">
+                <i class="material-icons">keyboard_arrow_left</i>
+            </span>
+            <h2>Quais jogos você procura?</h2>
+            <span onclick="movfiltro(2)" class="span2">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </span>
+
+            <select name="ano" class="filterano">
+                <option value="ano">Ano</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+            </select>
+
+            <select name="genero" class="filtergenero">
+                <option value="genero">Gênero</option>
+                <option value="acao">Acao</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Esporte">Esporte</option>
+            </select>
+
+            <select name="plataforma" class="filterplataforma">
+                <option value="plataforma">Plataforma</option>
+                <option value="xbox">Xbox</option>
+                <option value="Playstation">PS4</option>
+                <option value="Nintendo">Nintendo</option>
+            </select>
+
+
+            <a href="pesquisa.html">
+                <button title="Buscar" onclick="buscar()">Buscar</button>
+            </a>
+        </section>
+
+        <section class="jogodesc">
+            <h2>Shadow of The Colossus PS4</h2>
+            <img src="midias/sha.jpg" class="imagem">
+            <div class="info">
+                <p>R$ 143,00</p>
+                <p>Ano: 2018</p>
+                <p>Gênero: Aventura</p>
+                <p>Plataforma: PS4</p>
+            </div>
+            <h3>Descrição</h3>
+            <p>
+                Shadow of Colossus volta para o Playstation 4 em um remake que traz a beleza e solidão que o jogo proporciona, com gráficos
+                de última geração será possível jogar em 4K no Playstation 4 PRO. Você entra na pele de um guerreiro que
+                está tentando salvar uma donzela morta, ao encontrar um deus em uma região desconhecida ele promete trazer
+                ela de volta a vida em troca do guerreiro destruir dezesseis colossos.
+            </p>
+            <p>
+                Em Shadow of Colossus sua missão envolve explorar diversas regiões desconhecidas e encontrar esses monstros colossais, para
+                cada batalha será necessária uma estratégia diferente. A beleza mórbida desse mundo traz uma sensação de
+                aventura e desolação, uma trilha sonora digna dos maiores filmes e o ajuste dos controles e movimentos, assim
+                melhorando os problemas do seu antecessor.
+            </p>
+            <p>
+                Shadow of Colossus é recomendado para os jogadores que possuem paciência e almejam grandes batalhas. Os fãs de sua primeira
+                versão do Playstation 2 vão-ter a nostalgia de voltar a esse mundo.
+            </p>
+
+            <div class="sliderjogo">
+
+                <input type="radio" id="foto1" name="grupo" checked>
+                <label for="foto1">
+                    <img src="midias/sha1.jpg" />
+                </label>
+                <input type="radio" id="foto2" name="grupo">
+                <label for="foto2">
+                    <img src="midias/sha2.png" />
+                </label>
+                <input type="radio" id="foto3" name="grupo">
+                <label for="foto3">
+                    <img src="midias/sha3.jpeg" />
+                </label>
+                <input type="radio" id="foto4" name="grupo">
+                <label for="foto4">
+                    <img src="midias/sha4.jpg" />
+                </label>
+
+                <div class="principal">
+                    <div class="slide">
+                        <img src="midias/sha1.jpg" />
+                        <img src="midias/sha2.png" />
+                        <img src="midias/sha3.jpeg" />
+                        <img src="midias/sha4.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+    <footer>
+        <p> &copy; Copyright 2018 - X Games </p>
+    </footer>
+</body>
+
+</html>
