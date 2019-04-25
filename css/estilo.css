@@ -5,7 +5,13 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Roboto',sans-serif;    
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+    min-height: calc(100vh - 50px);
+    position: relative;
+    padding-bottom: 50px;
 }
 
 a{
@@ -15,8 +21,8 @@ a{
 .cabecalho{
     background-color: #212121;
     width: 100%;
-    height: 110px;   
-    position: relative; 
+    height: 110px;
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -56,19 +62,19 @@ a{
 }
 
 .pesquisa button:hover{
-    background-color: #FB8C00; 
-    cursor: pointer;    
+    background-color: #FB8C00;
+    cursor: pointer;
 }
 
 .pesquisa button:active{
     background-color: #F57C00;
     width: 29px;
-    height: 29px; 
+    height: 29px;
 }
 
 .search{
     background-color: #424242;
-    color: #f5f5f5; 
+    color: #f5f5f5;
     height: 30px;
     border: none;
     outline: none;
@@ -78,7 +84,7 @@ a{
 .maintitle{
     font-family: "Audiowide" , cursive;
     font-size: 30px;
-    color: #f5f5f5;  
+    color: #f5f5f5;
 }
 
 .subtitle{
@@ -90,14 +96,14 @@ a{
     cursor: pointer;
 }
 
-.menu{    
+.menu{
     width: 100%;
     background-color: #212121;
-    font-family: 'Roboto',sans-serif; 
-    z-index: 9999;  
+    font-family: 'Roboto',sans-serif;
+    z-index: 9999;
     display: inline-block;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 
-                0 1px 7px 0 rgba(0, 0, 0, 0.12), 
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+                0 1px 7px 0 rgba(0, 0, 0, 0.12),
                 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 
@@ -108,13 +114,13 @@ a{
 }
 
 .menu ul li {
-    width: 150px;  
+    width: 150px;
     float: left;
 }
 
 .menu a{
     padding: 15px;
-    display: block;   
+    display: block;
     text-decoration: none;
     text-align: center;
     background-color: #212121;
@@ -123,7 +129,7 @@ a{
 
 .menu ul ul{
     position: absolute;
-    visibility: hidden;    
+    visibility: hidden;
 }
 
 .menu ul li:hover ul{
@@ -169,7 +175,7 @@ a{
 .destaque{
     position: relative;
     width: 80%;
-    margin: 0 auto; 
+    margin: 0 auto;
     /* overflow: hidden; */
     /* margin-bottom: 7%; */
 }
@@ -177,7 +183,7 @@ a{
 .slider{
     width: 100%;
     height: auto;
-    position: relative; 
+    position: relative;
 }
 
 .slider img{
@@ -196,7 +202,7 @@ a{
     width: 35%;
     height: 450px;
     flex-direction: column;
-    position: fixed; 
+    position: fixed;
     margin: 20px;
     border-radius: 5px;
     transform: translateX(-99%);
@@ -210,7 +216,7 @@ a{
 }
 
 .filter h2{
-    margin: 10px auto;  
+    margin: 10px auto;
     font-size: 20px;
 }
 
@@ -243,12 +249,12 @@ a{
     outline: none;
     border-radius: 3px;
     width: 100%;
-    
+
 }
 
 .filter a button:hover{
-    background-color: #FB8C00; 
-    cursor: pointer;    
+    background-color: #FB8C00;
+    cursor: pointer;
 }
 
 .filter button:active{
@@ -287,7 +293,7 @@ a{
     font-size: 30px;
     position: relative;
     font-family: "Audiowide" , cursive;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 }
 
 .artigo h3{
@@ -305,9 +311,11 @@ a{
 }
 
 footer{
-    background-color: #212121; 
+    background-color: #212121;
     height: 50px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 footer p{
@@ -316,7 +324,7 @@ footer p{
     font-size: 15px;
     padding: 15px;
     padding-bottom: 14px;
-    text-align: center;  
+    text-align: center;
 }
 
 .destaque2{
@@ -330,7 +338,7 @@ footer p{
     font-size: 30px;
     position: relative;
     font-family: "Audiowide" , cursive;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 }
 
 .vejatambem{
@@ -343,8 +351,8 @@ footer p{
 }
 
 .vejatambem img{
-    width: 95%; 
-    height: auto;  
+    width: 95%;
+    height: auto;
 }
 
 .noticia{
@@ -358,7 +366,7 @@ footer p{
     font-size: 30px;
     position: relative;
     font-family: "Audiowide" , cursive;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
     padding: 20px 0;
 }
 
@@ -371,8 +379,8 @@ footer p{
     width: 50%;
     position: relative;
     margin: 10px auto;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 
-                0 1px 7px 0 rgba(0, 0, 0, 0.12), 
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+                0 1px 7px 0 rgba(0, 0, 0, 0.12),
                 0 3px 1px -1px rgba(0, 0, 0, 0.2);
     border: none;
     left: 25%;
@@ -383,7 +391,7 @@ footer p{
     font-size: 30px;
     position: relative;
     font-family: "Audiowide" , cursive;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
     margin: 20px auto;
     width: 80%;
     left: 20px;
@@ -423,6 +431,7 @@ footer p{
     position: relative;
     width: 80%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .jogodesc h2{
@@ -476,7 +485,7 @@ footer p{
 
 .principal{
     width: 600px;
-    height: 300px;  
+    height: 300px;
     overflow: hidden;
 }
 
@@ -529,29 +538,34 @@ input[name="grupo"]:checked + label img{
         left: 20px;
     }
 
-    .titulos{   
+    .titulos{
         left: 40px;
-        min-width: 280px;
+        min-width: 240px;
     }
 
-    .pesquisa{      
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .pesquisa{
         transform: translateX(-200%);
     }
 
     .filter{
         width: 100%;
+        height: 390px;
     }
 
     .menu{
         position: absolute;
         transform: translateX(-110%);
-        transition: all .3s ease-in-out;        
-        
+        transition: all .3s ease-in-out;
+
     }
 
     .menuresponsivo{
-        transform: translateX(0)!important;  
-        transition: all .3s ease-in-out; 
+        transform: translateX(0)!important;
+        transition: all .3s ease-in-out;
     }
 
     .menu ul li{
@@ -600,13 +614,14 @@ input[name="grupo"]:checked + label img{
 
     .sliderjogo{
         width: 300px;
+        overflow: hidden;
     }
 
     .principal{
         width: 300px;
-        height: 150px;  
+        height: 150px;
     }
-    
+
     .slide img{
         width: 300px;
         height: 150px;
@@ -625,4 +640,4 @@ input[name="grupo"]:checked + label img{
         margin-top: 390px;
     }
 
-} 
+}
